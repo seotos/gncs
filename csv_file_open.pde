@@ -3,7 +3,7 @@
 int[] homeRuns;         // 어느 함수에도 소속되지 않은 전역변수를 만든다.
 void setup() {
   size(480, 120);
-  Table stats = loadTable("ortiz.csv");  // csv파일 열어 파일의 정보를 가져온다.
+  Table stats = loadTable("ortiz.csv");  // csv파일 열어 파일의 정보를 가져온다. 헤더가 있을 경우 loadTable("cities.csv", "header");
   int rowCount = stats.getRowCount(); // 행의 개수를 구한다.
   homeRuns = new int[rowCount];        // 행의 개수 만큼 홈런 정보를 저장하기 위한 배열을 만든다.
   for (int i = 0; i < homeRuns.length; i++) {
