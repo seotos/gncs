@@ -15,7 +15,7 @@ void draw() {
   background(255);
   
   // Draw the full map
-  shape(usa, -600, -180);
+  shape(usa, 0, 0);
   
   // Disable the colors found in the SVG file
   michigan.disableStyle();
@@ -23,7 +23,7 @@ void draw() {
   fill(0, 51, 102);
   noStroke();
   // Draw a single state
-  shape(michigan, -600, -180); // Wolverines!
+  shape(michigan, 0, 0); // Wolverines!
   
   // Disable the colors found in the SVG file
   ohio.disableStyle();
@@ -31,5 +31,5 @@ void draw() {
   fill(153, 0, 0);
   noStroke();
   // Draw a single state
-  shape(ohio, -600, -180);  // Buckeyes!
+  shape(ohio, 0, 0);  // Buckeyes!
 }
